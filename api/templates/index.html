@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>{{ title }}</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="row px-5 pt-5">
+    <div class="col-2    ,offset-md-4 i " id="nav">
+      <!-- Hover added -->
+      <div class="list-group">
+        <a href="#generos" class="list-group-item list-group-item-action">Generos</a>
+        <a href="#usuarios" class="list-group-item list-group-item-action">usuarios</a>
+        <a href="#peliculas" class="list-group-item list-group-item-action">peliculas</a>
+        <a href="#opiniones" class="list-group-item list-group-item-action">opiniones</a>
+      </div>
+
+    </div>
+    <div id="main" class="col-10  mx-auto  ,offset-md-4 bg-secondary justify-content-center ">
+
+      <div id="tituloApi">
+        <h1 class="text-warning ">API Peliculas</h1>
+      </div>
+          
+      <div class="descripcion">
+        <p class="fs-5 text-black text-white">Esta API le permite obtener datos de peliculas de la base de datos relacional y la base de datos no relacional</p>
+      </diV>
+      
+      <div class="Contenido" id="generos">
+        <h3 class="text-warning ">GET generos</h1>
+          <p class="fs-5 text-black text-white">Para Obtener todas los Generos de peliculas</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/generos/">http://127.0.0.1:8000/api/generos/</a>
+      </diV>
+      <div class="Contenido">
+        <h3 class="text-warning ">GET ONE genero</h1>
+          <p class="fs-5 text-black text-white">Para Obtener uno de los Generos de peliculas</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/generos/1">http://127.0.0.1:8000/api/generos/1</a>
+      </diV>
+      <div class="Contenido" id="usuarios">
+        <h3 class="text-warning ">GET usuarios</h1>
+          <p class="fs-5 text-black text-white">Para Obtener todos los usuarios de peliculas</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/usuarios/">http://127.0.0.1:8000/api/usuarios/</a>
+      </diV>
+      <div class="Contenido">
+        <h3 class="text-warning ">GET ONE usuario</h1>
+          <p class="fs-5 text-black text-white">Para Obtener uno de los usuarios de peliculas</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/usuarios/1/">http://127.0.0.1:8000/api/usuarios/1/</a>
+      </diV>
+
+      <div class="Contenido" id="peliculas">
+        <h3 class="text-warning ">GET peliculas</h1>
+          <p class="fs-5 text-black text-white">Para Obtener todas las peliculas</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/peliculas/">http://127.0.0.1:8000/api/peliculas/</a>
+      </diV>
+
+      <div class="Contenido">
+        <h3 class="text-warning ">GET ONE pelicula</h1>
+          <p class="fs-5 text-black text-white">Para Obtener una de las peliculas</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/peliculas/1/">http://127.0.0.1:8000/api/peliculas/1/</a>
+      </diV>
+
+      <div class="Contenido">
+        <h3 class="text-warning ">GET peliculas por genero</h1>
+          <p class="fs-5 text-black text-white">Para Obtener todas las peliculas de un genero</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/peliculas/genero/1">http://127.0.0.1:8000/api/peliculas/genero/1</a>
+      </diV>
+
+      <div class="Contenido" id="opiniones">
+        <h3 class="text-warning ">GET todas las opiniones</h1>
+          <p class="fs-5 text-black text-white">Para Obtener todas las opiniones de peliculas</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/opinions/">http://127.0.0.1:8000/api/opinions/</a>
+      </diV>
+      <div class="Contenido">
+        <h3 class="text-warning ">GET todas las peliculas de una opinion</h1>
+          <p class="fs-5 text-black text-white">Para filtrar las peliculas por una opinion</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/peliculas/opinion/1">http://127.0.0.1:8000/api/peliculas/opinion/1</a>
+      </diV>
+      <div class="Contenido">
+        <h3 class="text-warning ">GET una pelicula aleatoria</h1>
+          <p class="fs-5 text-black text-white">Para obtener una pelicula al azar</p>
+          <p><strong>Endpoint: </strong></p>
+          <a class="bg-white" href="http://127.0.0.1:8000/api/peliculas/random/">http://127.0.0.1:8000/api/peliculas/random/</a>
+      </diV>
+
+    </div>
+  </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
